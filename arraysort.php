@@ -16,9 +16,9 @@ for ($i = 0; $i < count($arr); $i++) {
     }
 }
 
-// for ($i=0; $i < count($arr); $i++) {
-//     echo $i . ">" . $arr[$i] . "\n";
-// }
+for ($i=0; $i < count($arr); $i++) {
+    echo $i . ">" . $arr[$i] . "\n";
+}
 // var_dump($arr);
 
 ?>
