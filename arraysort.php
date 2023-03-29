@@ -21,4 +21,24 @@ for ($i=0; $i < count($arr); $i++) {
 }
 // var_dump($arr);
 
+$arr = array(5, 10, 7, 3, 1);
+
+for ($i = 0; $i < count($arr) - 1; $i++) {
+    $minIndex = $i;
+    for ($j = $i + 1; $j < count($arr); $j++) {
+        if ($arr[$j] < $arr[$minIndex]) {
+            $minIndex = $j;
+        }
+    }
+    if ($minIndex != $i) {
+        $temp = $arr[$i];
+        $arr[$i] = $arr[$minIndex];
+        $arr[$minIndex] = $temp;
+    }
+}
+
+for ($i = 0; $i < count($arr); $i++) {
+    echo $i . ">" . $arr[$i] . "\n";
+}
+
 ?>
