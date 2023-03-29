@@ -17,15 +17,16 @@ for ($i = 0; $i < count($arr); $i++) {
 }
 
 for ($i=0; $i < count($arr); $i++) {
-    echo $i . ">" . $arr[$i] . "\n";
+    echo $i . " > " . $arr[$i] . "\n";
 }
 // var_dump($arr);
 
 $arr = array(5, 10, 7, 3, 1);
+$cntArr = count($arr);
 
-for ($i = 0; $i < count($arr) - 1; $i++) {
+for ($i = 0; $i < $cntArr; $i++) {
     $minIndex = $i;
-    for ($j = $i + 1; $j < count($arr); $j++) {
+    for ($j = $i + 1; $j < $cntArr; $j++) {
         if ($arr[$j] < $arr[$minIndex]) {
             $minIndex = $j;
         }
@@ -37,8 +38,8 @@ for ($i = 0; $i < count($arr) - 1; $i++) {
     }
 }
 
-for ($i = 0; $i < count($arr); $i++) {
-    echo $i . ">" . $arr[$i] . "\n";
+for ($i = 0; $i < $cntArr; $i++) {
+    echo $i . " > " . $arr[$i] . "\n";
 }
 
 ?>
