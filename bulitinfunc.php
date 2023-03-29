@@ -9,7 +9,7 @@ function funcDivi($intA, $intB)
 }
 
 //소수인지 아닌지
-function additionalPrac($a, $b)
+function floorPrac($a, $b)
 {
     if ($a % $b == 0) {
         return "소수가 아닙니다";
@@ -20,5 +20,5 @@ function additionalPrac($a, $b)
     }
 };
 
-echo "소수점 아래만 구하기 \n5나누기2 = " . additionalPrac(5, 2) . "\n4나누기2 = " . additionalPrac(4, 2) . "\n";
+echo "소수점 아래만 구하기 \n5나누기2 = " .floorPrac(5, 2) . "\n4나누기2 = " . floorPrac(4, 2) . "\n";
 ?>
